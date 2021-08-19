@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/update_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        app:title="Update your data"
+        app:titleTextColor="@color/white"></androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/update_toolbar"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:id="@+id/register_BOX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:layout_marginTop="10dp"></EditText>
+
+
+            <EditText
+                android:id="@+id/name2"
+                android:layout_below="@+id/name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Last Name"></EditText>
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_below="@+id/name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="textEmailAddress"
+                android:hint="e-Email"></EditText>
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_below="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:hint="Password"></EditText>
+
+            <EditText
+                android:id="@+id/contactUP"
+                android:layout_below="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:hint="Contact"></EditText>
+
+            <Button
+                android:id="@+id/update_btn"
+                android:layout_below="@+id/contactUP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#2196F3"
+                android:text="Update"></Button>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
